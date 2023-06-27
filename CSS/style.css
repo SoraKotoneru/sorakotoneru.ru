@@ -1,0 +1,32 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fadce4;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    position: relative;
+    width: 1170px;
+    height: 439px;
+    left: calc(50% - 1120px/2);
+    top: 40px;
+
+    border-radius: 20px;
+    background: linear-gradient(130deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.title {
+    padding-left: 100px;
+    width: 50%;
+    display: inline-block;
+}
+
+.Elmira {
+    width: 45%; 
+
+}
+
+.tit1 {
+    margin-bottom: 60px;
+}
