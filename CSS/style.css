@@ -10,13 +10,18 @@ body {
     width: 1170px;
     height: 439px;
     left: calc(50% - 1120px/2);
-    top: 40px;
-
+    top: 40px; 
+    
     border-radius: 20px;
-    background: linear-gradient(130deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.00) 100%);
+    border: 14px solid #FBE3E9;
+    background: linear-gradient(90deg, #6A9CFD 0%, #E2B9DB 100%);
+    box-shadow: 10px 12px 28px -6px rgba(83, 76, 153, 0.25);
+    margin-bottom: 80px;
+
 }
 
 .title {
+    color: #ffffff;
     padding-left: 100px;
     width: 50%;
     display: inline-block;
@@ -28,5 +33,16 @@ body {
 }
 
 .tit1 {
+    color: #ffffff;
     margin-bottom: 60px;
+}
+
+.title-curo {
+    color: #000000;
+text-align: center;
+font-family: Roboto;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
