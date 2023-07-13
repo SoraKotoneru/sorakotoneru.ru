@@ -1,6 +1,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #fadce4;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -30,6 +32,14 @@ main {
     }
 }
 
+@media (max-width: 360px) {
+    .det {
+        position: absolute;
+        right: 0;
+        top: 285px;
+    }
+}
+
 @media (max-width: 768px) {
     h1 {
         text-align: right;
@@ -38,7 +48,15 @@ main {
 
 @media (max-width: 360px) {
     h1 {
-        font-size: 50px;
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 360px) {
+    .comp {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 }
 
@@ -88,6 +106,7 @@ main {
 }
 
 .title {
+    display: flex;
     color: #ffffff;
     padding-left: 100px;
     width: 50%;
@@ -96,12 +115,13 @@ main {
 
 @media (max-width: 360px) {
     .title {
+        margin-right: 85px;
         padding-left: 0;
         position: absolute;
         z-index: 5;
         top: 0;
         right: 0;
-
+        height: 100%;
     }
 }
 
@@ -122,6 +142,21 @@ main {
 .tit1 {
     color: #ffffff;
     margin-bottom: 60px;
+    right: 0;
+}
+
+@media (max-width: 360px) {
+    .tit1 {
+        position: absolute;
+        top: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .tit2 {
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 .title-curo {
@@ -142,6 +177,12 @@ main {
     width: 100%;
 }
 
+@media (max-width: 360px) {
+    .container {
+        /* padding: 0 80px; */
+    }
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -149,23 +190,24 @@ main {
     width: 100%;
 }
 
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
     }
-}
+} */
 
 @media (max-width: 768px) {
     .grid-container {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
-        
+
     }
 }
 
 @media (max-width: 360px) {
     .grid-container {
+        padding: 0 80px;
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -205,11 +247,11 @@ main {
     width: 100%;
 }
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
     .grid-container .grid-item-img img {
         width: 100%;
     }
-}
+} */
 
 .grid-container .grid-item-text {
     margin: 18px 0;
@@ -221,11 +263,11 @@ main {
     font-weight: bold;
 }
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
     .grid-container .grid-item-text {
         font-size: 10px;
     }
-}
+} */
 
 .grid-container .grid-item-text:hover {
     color: #007fad;
