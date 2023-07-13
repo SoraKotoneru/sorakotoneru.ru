@@ -24,9 +24,21 @@ main {
     }
 }
 
+@media (max-width: 360px) {
+    h3 {
+        font-size: 40px;
+    }
+}
+
 @media (max-width: 768px) {
     h1 {
         text-align: right;
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 50px;
     }
 }
 
@@ -38,6 +50,12 @@ main {
     align-items: center;
     max-width: 1270px;
     padding: 0 40px;
+}
+
+@media (max-width: 360px) {
+    .inner {
+        padding: 0;
+    }
 }
 
 .header {
@@ -58,10 +76,14 @@ main {
     /* margin-bottom: 80px; */
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 360px) {
     .header {
-        /* margin: 0 80px; */
-        /* width: 100%; */
+        position: relative;
+        border: none;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+        height: 1200px;
     }
 }
 
@@ -72,9 +94,29 @@ main {
     display: inline-block;
 }
 
+@media (max-width: 360px) {
+    .title {
+        padding-left: 0;
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        right: 0;
+
+    }
+}
+
 .Elmira {
     width: 45%;
 
+}
+
+@media (max-width: 360px) {
+    .Elmira {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
 }
 
 .tit1 {
