@@ -54,7 +54,7 @@ main {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
     .header {
         position: relative;
         border: none;
@@ -80,15 +80,16 @@ main {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
     .title {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
         margin-right: 15px;
-        padding-left: 0;
-        position: absolute;
+        padding-left: 45%;
         z-index: 5;
-        top: 0;
-        right: 0;
         height: 100%;
+        order: 2;
     }
 }
 
@@ -109,17 +110,15 @@ main {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
     h3 {
-        font-size: 5vw;
+        font-size: 2vw;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
     .det {
-        position: absolute;
-        right: 0;
-        top: 125px;
+        font-size: 4vw;
         white-space: nowrap;
     }
 }
@@ -141,22 +140,27 @@ main {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
     h1 {
-        font-size: 8vw;
+        font-size: 4vw;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
     .comp {
-        position: absolute;
-        right: 0;
-        top: 0;
+        font-size: 6vw;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
+    .ped {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 576px) {
     .elm {
+        font-size: 5vw;
         white-space: nowrap;
     }
 }
@@ -179,13 +183,13 @@ main {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
     .Elmira {
-        margin-top: 0;
         position: absolute;
-        width: 92%;
-        top: 65px;
-        left: 0;
+        margin-top: 0;
+        padding-right: 0;
+        order: 1;
+        width: 75%;
     }
 }
 
@@ -195,21 +199,21 @@ main {
     right: 0;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
     .tit1 {
-        position: absolute;
-        top: 0;
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 
 .tit2 {
-    right: 0;
+    
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
     .tit2 {
-        position: absolute;
-        bottom: 0;
+        /* position: absolute;
+        bottom: 0; */
     }
 }
 
@@ -223,9 +227,25 @@ main {
     line-height: normal;
 }
 
+.title-curo {
+    font-size: 4vw;
+}
+
+@media (max-width: 1170px) {
+    .title-curo {
+        font-size: 4vw;
+    }
+}
+
 @media (max-width: 768px) {
     .title-curo {
-        font-size: 26px;
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .title-curo {
+        font-size: 8vw;
     }
 }
 
@@ -266,7 +286,7 @@ main {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -316,16 +336,23 @@ main {
     text-align: start;
     text-decoration: none;
     color: inherit;
-    font-size: 20px;
+    font-size: 2vw;
     transition: 0.2s;
     font-weight: bold;
 }
 
-/* @media (max-width: 575px) {
+@media (max-width: 768px) {
     .grid-container .grid-item-text {
-        font-size: 10px;
+        font-size: 3vw;
+
     }
-} */
+}
+
+@media (max-width: 576px) {
+    .grid-container .grid-item-text {
+        font-size: 8vw;
+    }
+}
 
 .grid-container .grid-item-text:hover {
     color: #007fad;
@@ -354,8 +381,21 @@ main {
     width: 100%;
 }
 
-.grid-container-mini .grid-item-mini .text-mini {
-    font-size: 10px;
+.text-mini {
+    display: flex;
+    font-size: 2vw;
+}
+
+@media (max-width: 768px) {
+    .text-mini {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-mini {
+        font-size: 5vw;
+    }
 }
 
 .splide__slide img {
